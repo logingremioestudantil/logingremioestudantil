@@ -26,27 +26,24 @@
             color: white;
         }
         nav {
-    background-color: #444;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
         .container {
             background: #808080;
             padding: 20px;
@@ -133,12 +130,38 @@ nav ul li a {
     
             <input type="submit" value="Entrar">
         </form>
+        <p id="errorMessage" style="color: red; display: none;"></p>
     </div>
 </main>
 
 <footer>
     <p>&copy; 2024 Grêmio Estudantil. Todos os direitos reservados.</p>
 </footer>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita o envio do formulário
+
+        // Coletar valores do formulário
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        var school = document.getElementById('school').value;
+        
+        // Mensagens de erro
+        var errorMessage = document.getElementById('errorMessage');
+        
+        // Simulação de validação
+        if (username === 'admin' && password === 'password') {
+            // Aqui você pode redirecionar para outra página ou realizar outras ações
+            alert('Login bem-sucedido!');
+            window.location.href = 'pagina-de-bem-vindo.html'; // Redireciona para uma página de boas-vindas
+        } else {
+            // Exibir mensagem de erro
+            errorMessage.textContent = 'Nome de usuário ou senha incorretos.';
+            errorMessage.style.display = 'block';
+        }
+    });
+</script>
 
 </body>
 </html>
