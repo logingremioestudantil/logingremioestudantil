@@ -1,0 +1,176 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para a barra de navegação */
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo para o conteúdo principal */
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+}
+
+/* Estilo para as páginas */
+.page {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para o formulário de denúncia */
+.denuncia-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.denuncia-form input,
+.denuncia-form textarea {
+    width: 80%;
+    padding: 15px; /* Aumentando o tamanho da caixa de texto */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto; /* Centralizando os elementos */
+}
+
+.denuncia-form textarea {
+    height: 200px; /* Ajustando a altura da caixa de texto */
+}
+
+.denuncia-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Centralizando o botão */
+}
+
+/* Estilo para a caixa de texto "Descreva o problema" */
+.problema-input {
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: none; /* Inicialmente oculta */
+    margin: 0 auto;
+}
+
+/* Estilo para a agenda */
+.eventos {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.evento {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para o chat */
+.chat {
+    background-color: #eaeaea;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Estilo para as mensagens no chat */
+.message {
+    margin-bottom: 10px;
+}
+
+/* Estilo para o formulário do chat */
+.chat-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.chat-form textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    display: block;
+    margin: 0 auto; /* Centralizando a caixa de texto */
+}
+
+.chat-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Centralizando o botão */
+}
+
+.page-denuncia {
+
+    margin-bottom: 40px;
+
+
+}
