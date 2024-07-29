@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grêmio Estudantil</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif ;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; /* Para evitar barras de rolagem */
+        }
+        header {
+            width: 100%;
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+        .container {
+            background: #808080;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            z-index: 10; /* Para garantir que o formulário fique acima do canvas 3D */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+        label {
+            margin-bottom: 5px;
+            color: white;
+            font-weight: bold;
+        }
+        input, select {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #0000ff;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #000080;
+        }
+        footer {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1><a style="margin-left: 0; color: white;text-decoration:none;" href="index.html">Grêmio Estudantil</a></h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="sobrenospage.html">Sobre Nós</a></li>
+        <li><a href="pagina-de-denuncia.html">Denúncias</a></li>
+        <li><a href="agendadeeventos.html">Agenda De Eventos</a></li>
+        <li><a href="sugestoes.html">Sugestões</a></li>
+    </ul>
+</nav>
+
+<main class="text-center">
+    <div class="container">
+        <h2 style="color: white">Login</h2>
+        <form id="loginForm">
+            <label for="username">Nome de usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+    
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+    
+            <label for="school">Escola:</label>
+            <select id="school" name="school">
+                <option value="escola1">Etec Alberto Santos Dumont</option>
+            </select>
+            <br>
+    
+            <input type="submit" value="Entrar">
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Grêmio Estudantil. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
